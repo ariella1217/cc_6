@@ -61,3 +61,12 @@ class Company {
         });
     }
 }
+
+// Step 6: Instantiate a Company object, add both employee and manager instances, and call listEmployees().
+const NewCompany = new Company();
+
+employees.forEach(emp => NewCompany.addEmployee(emp));
+
+Managers.forEach(mgr => NewCompany.addEmployee(mgr));
+
+NewCompany.listEmployees();
