@@ -44,3 +44,20 @@ for (let emp of employees){
 for (let man of Managers){
     console.log(man.describe());
 }
+
+// step 5: Step 5: Create a class called Company with a property employees (an array).
+class Company {
+    constructor() {
+        this.employees = [];
+    }
+
+    addEmployee(employee) {
+        this.employees.push(employee);
+    }
+
+    listEmployees() {
+        this.employees.forEach(employee => {
+            console.log(employee.describe());
+        });
+    }
+}
